@@ -1,9 +1,12 @@
 package application;
 
-import passwordValidator.Password;
+import wordFinder.WordFinder;
 
 public class App {
 
     public static void main(String[] args) {
+        WordFinder wf = new WordFinder();
+        System.out.println(wf.countWord());
     }
+
 }
