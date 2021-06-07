@@ -11,7 +11,7 @@ public class WordFinder {
 
     public int countWord() {
         int counter = 0;
-        String searchPattern = "\\b(?i)(Java)+\\b"; // why does the pattern only find one result??
+        String searchPattern = "(?i)(\\bJava\\b)+?"; // why does the pattern only find one result??
         try (BufferedReader br = new BufferedReader(new FileReader(wordFile))) {
             String line = "";
             while ((line = br.readLine()) != null) {
