@@ -19,8 +19,7 @@ class PasswordTest {
         assertTrue(password3.hasRequiredLength());
         assertTrue(password4.hasRequiredLength());
     }
-
-
+    
     @Test
     void isOnBlacklist() {
         Password password1 = new Password("hallo");
