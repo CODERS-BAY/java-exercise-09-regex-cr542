@@ -23,13 +23,6 @@ public class Password {
      * - Must not be in the given passwords list
      */
 
-    /*
-     * To Do:
-     * - Import pw list and check if a generated password is allowed due to this list
-     * - Check if the password string contains at least two number values and one special char
-     * -
-     */
-
     public Password(String input) {
         this.characters = input;
         this.initializeBlacklist();
@@ -49,11 +42,11 @@ public class Password {
     }
 
     public boolean matchesRequiredPattern() {
-        String pattern = "[\w]";
         /*
-         * 2 x number / 1 x specialChar
+         * RegEx works, but only if the password is in the following order: Letters - Number - SpecialChar
          */
-        return getCharacters().matches(pattern);
+        String regExp = "^[a-zA-Z]+[\\d]{2,}[!\"`'#%&,:;<>=@{}~\\$\\(\\)\\*\\+\\/\\\\\\?\\[\\]\\^\\|]+$";
+        return getCharacters().matches(regExp);
     }
 
     public boolean meetsValidationRules() {

@@ -48,7 +48,7 @@
       <recent name="passwordValidator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordTest.meetsValidationRules">
+  <component name="RunManager" selected="JUnit.PasswordTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="application.App" />
       <module name="java-exercise-09-regex-cr542" />
@@ -62,18 +62,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordTest.hasRequiredLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-exercise-09-regex-cr542" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +85,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="passwordValidator" />
       <option name="MAIN_CLASS_NAME" value="passwordValidator.PasswordTest" />
-      <option name="METHOD_NAME" value="hasRequiredLength" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,6 +101,22 @@
       <option name="PACKAGE_NAME" value="passwordValidator" />
       <option name="MAIN_CLASS_NAME" value="passwordValidator.PasswordTest" />
       <option name="METHOD_NAME" value="isOnBlacklist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordTest.matchesRequiredPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-exercise-09-regex-cr542" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="passwordValidator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="passwordValidator" />
+      <option name="MAIN_CLASS_NAME" value="passwordValidator.PasswordTest" />
+      <option name="METHOD_NAME" value="matchesRequiredPattern" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,10 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PasswordTest" />
         <item itemvalue="JUnit.PasswordTest.meetsValidationRules" />
+        <item itemvalue="JUnit.PasswordTest.matchesRequiredPattern" />
         <item itemvalue="JUnit.PasswordTest.isOnBlacklist" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.PasswordTest.hasRequiredLength" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622998029963</updated>
       <workItem from="1622998031491" duration="7945000" />
+      <workItem from="1623080413837" duration="1972000" />
     </task>
     <servers />
   </component>
