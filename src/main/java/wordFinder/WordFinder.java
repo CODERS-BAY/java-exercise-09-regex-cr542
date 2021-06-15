@@ -11,11 +11,11 @@ public class WordFinder {
 
     public int countWord() {
         int counter = 0;
-        String searchPattern = "(?i)(\\bJava\\b)+?"; // why does the pattern only find one result??
+//        String searchPattern = "(?i)(\\bJava\\b)+?";
         try (BufferedReader br = new BufferedReader(new FileReader(wordFile))) {
             String line = "";
             while ((line = br.readLine()) != null) {
-                if(line.matches(searchPattern)) {
+                if(line.toLowerCase().contains("java")) {
                     counter++;
                 }
             }
