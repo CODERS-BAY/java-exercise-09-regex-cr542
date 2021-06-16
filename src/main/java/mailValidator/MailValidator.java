@@ -21,7 +21,7 @@ public class MailValidator {
     }
 
     public boolean isValid() {
-        String pattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
+        String pattern = "^[a-zA-Z0-9.!#$%&'*+=?_|-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])+\\.([a-zA-Z]){2,60}$";
         return getMailAddress().matches(pattern);
     }
 
